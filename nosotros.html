@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosotros | Golocan®</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+  .row .media-ph{height:300px;}
+  .row.reverse{direction:rtl;}
+  .row.reverse > *{direction:ltr;}
+
+  .diff-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:42px;}
+  .diff-card{border:1px solid var(--line);border-radius:var(--radius-md);padding:30px 24px;text-align:left;box-shadow:var(--shadow-sm);}
+  .diff-card .big{font-family:var(--font-display);font-weight:800;font-size:32px;color:var(--red-600);}
+  .diff-card .ico{color:var(--red-600);margin-bottom:8px;}
+  .diff-card h3{font-size:16px;margin:10px 0 8px;}
+  .diff-card p{font-size:13.5px;}
+
+  .family-band{background:var(--red-600);color:#fff;text-align:center;padding:70px 0;}
+  .family-band h2{color:#fff;font-size:32px;}
+  .family-band p{color:#FBD9D7;max-width:680px;margin:18px auto 36px;}
+  .family-band .media-ph{height:300px;background:rgba(255,255,255,.12);}
+  .family-band .media-ph span{color:#fff;}
+
+  .countries{display:flex;flex-direction:column;gap:10px;}
+  .country-row{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:16px 22px;border-radius:14px;font-weight:700;font-size:15px;
+  }
+  .country-row .dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:10px;}
+  .country-row.main{background:var(--red-600);color:#fff;}
+  .country-row.main .dot{background:#fff;}
+  .country-row:not(.main){background:var(--red-50);color:var(--ink);}
+  .country-row:not(.main) .dot{background:var(--red-600);}
+  .country-row span.tag{font-weight:600;font-size:13.5px;opacity:.85;}
+
+  .final-ctas{display:flex;justify-content:center;gap:16px;margin-top:50px;}
+
+  .footer-logo img {filter: invert(34%) sepia(96%) saturate(7465%) hue-rotate(358deg) brightness(87%) contrast(106%);}
+
+  @media (max-width:980px){
+    .row{grid-template-columns:1fr;}
+    .row.reverse{direction:ltr;}
+    .diff-grid{grid-template-columns:repeat(2,1fr);}
+    .final-ctas{flex-direction:column;align-items:center;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">
+      <img src="img/logo.svg" height="50px">
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="vende-golocan.html">Vendé Golocan</a></li>
+        <li><a href="donde-comprar.html">¿Dónde comprar?</a></li>
+        <li><a href="nosotros.html" class="active">Nosotros</a></li>
+        <li><a href="contactanos.html">Contactanos</a></li>
+        <li><a href="#">Nuestra tienda</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="breadcrumb"><a href="index.html">Inicio</a><span class="sep">&gt;</span><span class="current">Nosotros</span></div>
+</div>
+
+<section class="section">
+  <div class="wrap row">
+    <div>
+      <span class="eyebrow">Desde 1994</span>
+      <h1 class="section-title" style="font-size:32px;">Más de 30 años creando productos que los peluditos disfrutan</h1>
+      <p class="section-sub">Desde 1994 desarrollamos snacks y alimentos para perros y gatos con una convicción que sigue intacta: combinar innovación, calidad y pasión por lo que hacemos.</p>
+    </div>
+    <div class="media-ph"><span>Foto · planta / equipo Golocan</span></div>
+  </div>
+</section>
+
+<section class="section bg-cream">
+  <div class="wrap">
+    <h2 class="section-title center">¿Qué nos diferencia?</h2>
+    <div class="diff-grid">
+      <div class="diff-card">
+        <div class="big">+30</div>
+        <h3>Más de 30 años de experiencia</h3>
+        <p>Tres décadas desarrollando productos y acompañando el crecimiento del mercado de mascotas.</p>
+      </div>
+      <div class="diff-card">
+        <span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M5 7c2 2 5 2 7 0s5-2 7 0M5 17c2-2 5-2 7 0s5 2 7 0"/></svg></span>
+        <h3>ADN innovador</h3>
+        <p>Creamos productos que marcaron tendencias y seguimos apostando al desarrollo constante.</p>
+      </div>
+      <div class="diff-card">
+        <span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 10-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 000-7.8z"/></svg></span>
+        <h3>Elegidos por los peluditos</h3>
+        <p>Desarrollamos productos de alta aceptación que combinan sabor y calidad.</p>
+      </div>
+      <div class="diff-card">
+        <span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><path d="M2 21v-1a6 6 0 016-6h2a6 6 0 016 6v1M16 14a6 6 0 016 6v1"/></svg></span>
+        <h3>Relaciones a largo plazo</h3>
+        <p>Construimos vínculos transparentes y sostenibles con clientes y socios comerciales.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap row reverse">
+    <div class="media-ph"><span>Foto · línea de productos</span></div>
+    <div>
+      <span class="eyebrow">Nuestra evolución</span>
+      <h2 class="section-title" style="font-size:28px;">De los snacks a una propuesta integral</h2>
+      <p class="section-sub">A lo largo de nuestra historia ampliamos nuestra oferta para acompañar cada necesidad nutricional de perros y gatos.</p>
+      <p class="section-sub mt-32" style="margin-top:18px;">Con el crecimiento de nuestras marcas y la incorporación de nuevas categorías, hoy ofrecemos una propuesta completa que combina snacks y alimentos balanceados desarrollados bajo los mismos estándares de calidad, innovación y compromiso.</p>
+    </div>
+  </div>
+</section>
+
+<section class="family-band">
+  <div class="wrap">
+    <h2>Somos Familia</h2>
+    <p>Golocan nació como una empresa familiar, y la forma de hacer las cosas —cercana, comprometida y de largo plazo— es la misma que llevamos a cada producto, a cada equipo y a cada vínculo que construimos.</p>
+    <div class="media-ph"><span>Foto equipo completo o individuales</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap row">
+    <div>
+      <span class="eyebrow">Nuestra red</span>
+      <h2 class="section-title" style="font-size:28px;">Crecemos junto a quienes confían en nosotros</h2>
+      <p class="section-sub">Trabajamos todos los días para construir relaciones simples, transparentes y duraderas.</p>
+      <p class="section-sub" style="margin-top:14px;">Por eso acompañamos a nuestra red de comercios, distribuidores y veterinarias con atención cercana, soporte comercial y una visión compartida de crecimiento a largo plazo.</p>
+    </div>
+    <div class="media-ph"><span>Foto · equipo comercial</span></div>
+  </div>
+</section>
+
+<section class="section bg-cream">
+  <div class="wrap row">
+    <div class="media-ph"><span>Foto · mapa regional</span></div>
+    <div>
+      <span class="eyebrow">Presencia regional</span>
+      <h2 class="section-title" style="font-size:28px;">Una empresa argentina con mirada regional</h2>
+      <p class="section-sub mt-32" style="margin-top:14px;margin-bottom:28px;">Desde nuestra planta productiva continuamos desarrollando productos para todo el país y expandiendo nuestra presencia en distintos mercados de Latinoamérica.</p>
+      <div class="countries">
+        <div class="country-row main"><span><span class="dot"></span>Argentina</span><span class="tag">Planta productiva</span></div>
+        <div class="country-row"><span><span class="dot"></span>Uruguay</span><span class="tag">Distribución</span></div>
+        <div class="country-row"><span><span class="dot"></span>Paraguay</span><span class="tag">Distribución</span></div>
+        <div class="country-row"><span><span class="dot"></span>Perú</span><span class="tag">Distribución</span></div>
+        <div class="country-row"><span><span class="dot"></span>Ecuador</span><span class="tag">Distribución</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="final-ctas">
+    <a href="productos.html" class="btn btn-primary">Conocé nuestros productos</a>
+    <a href="vende-golocan.html" class="btn btn-outline-red">Quiero vender Golocan</a>
+  </div>
+</section>
+
+<footer class="site-footer" id="footer" style="border-top:1px solid var(--line);">
+  <div class="wrap footer-row">
+    <a href="index.html" class="footer-logo"><img src="img/logo.svg" color=#000 height="50px;"></a>
+    <div class="footer-info">
+      <div class="col"><strong>Dirección</strong>Churruca 9422<br>Loma Hermosa, Bs.As</div>
+      <div class="col"><strong>Contacto</strong>contacto@somosgolocan.com.ar<br>+54 9 11 3427-1784</div>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></a>
+      <a href="#" aria-label="YouTube"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2s-.2-1.6-.9-2.3c-.8-.9-1.8-.9-2.2-1C16.9 3.7 12 3.7 12 3.7s-4.9 0-7.9.2c-.4 0-1.4.1-2.2 1-.7.7-.9 2.3-.9 2.3S0 9 0 10.9v1.9C0 14.7.2 16.5.2 16.5s.2 1.6.9 2.3c.8.9 1.9.8 2.4.9 1.7.2 7.5.2 7.5.2s4.9 0 7.9-.3c.4 0 1.4-.1 2.2-1 .7-.7.9-2.3.9-2.3s.2-1.8.2-3.7V10.9C23.2 9 23 7.2 23 7.2zM9.5 14.6V8.4l6 3.1-6 3.1z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.1 0 4.1.1 1.1 0 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1 .1 1.4.1 4.1s0 3.1-.1 4.1c0 1.1-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1 .1-1.4.1-4.1.1s-3.1 0-4.1-.1c-1.1 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2-.1-1-.1-1.4-.1-4.1s0-3.1.1-4.1c0-1.1.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.2-.4C8.9 2 9.3 2 12 2zm0 1.8c-2.6 0-3 0-4 .1-.9 0-1.4.2-1.7.3-.4.2-.7.3-1 .6-.3.3-.5.6-.6 1-.1.3-.3.8-.3 1.7-.1 1-.1 1.3-.1 4s0 3 .1 4c0 .9.2 1.4.3 1.7.2.4.3.7.6 1 .3.3.6.5 1 .6.3.1.8.3 1.7.3 1 .1 1.3.1 4 .1s3 0 4-.1c.9 0 1.4-.2 1.7-.3.4-.2.7-.3 1-.6.3-.3.5-.6.6-1 .1-.3.3-.8.3-1.7.1-1 .1-1.3.1-4s0-3-.1-4c0-.9-.2-1.4-.3-1.7-.2-.4-.3-.7-.6-1-.3-.3-.6-.5-1-.6-.3-.1-.8-.3-1.7-.3-1-.1-1.3-.1-4-.1zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4zM17.4 6a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg></a>
+      <a href="#" aria-label="WhatsApp"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.7.7-2.7-.2-.3A8 8 0 1 1 12 20zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-1.2-.6-2-1-2.8-2.3-.2-.3 0-.5.1-.6l.4-.5c.1-.2.1-.4 0-.6-.1-.2-.6-1.4-.8-1.9-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.5.2-.6.4-.6.7-.6 1.5-.5 2.4.2 1.7 1 3.1 2.6 4.4 1.7 1.4 3 1.6 4.1 1.4.7-.1 1.5-.6 1.7-1.3.2-.6.2-1.1.1-1.2-.1-.1-.2-.1-.4-.2z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
